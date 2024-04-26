@@ -6,7 +6,7 @@
   "main": "index.js",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "dotenv": "16.4.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.3.0"
@@ -16,7 +16,7 @@
     "prettier": "^3.2.5"
   },
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv --experimental-json-modules .config src/index.js"
   },
   "keywords": [
     "backend"
